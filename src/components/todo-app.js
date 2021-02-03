@@ -37,7 +37,7 @@ export default class TodoApp extends React.Component {
       done: false
     }
 
-    this.setState(state => ({
+    this.setState((state) => ({
       items: state.items.concat(newItem),
       text: ''
     }))
@@ -50,7 +50,7 @@ export default class TodoApp extends React.Component {
       <div>
         <h3>TODO</h3>
         <ul>
-          {items.map(item =>
+          {items.map((item) =>
             !item.done ? (
               <TodoItem
                 key={item.id}
@@ -81,7 +81,7 @@ class TodoItem extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick() {
-    this.setState(state => ({
+    this.setState((state) => ({
       done: !state.done,
       date: new Date()
     }))
