@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import ToDoApp from './react/todo-app'
+import ToDoApp from './components/todo-app'
 
 const Help = () => (
   <Fragment>
